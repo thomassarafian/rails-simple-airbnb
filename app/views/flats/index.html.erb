@@ -1,0 +1,13 @@
+<h1>All flats</h1>
+
+<ul>
+  <% @flats.each do |flat| %>
+    <p>
+      <%= flat[:name] %> <br>
+      <%= flat[:address] %> <br>
+      <%= flat[:price_per_night] %> euros <br>
+      <%= flat[:number_of_guests] %> personnes <br>
+    </p>
+  <% end %>
+</ul>
+
